@@ -4,9 +4,9 @@ jdk:
 
 addons:
   sonarcloud:
-	organization: "mihaijianu"
+	organization: mihaijianu
 	token:
-	 secure: "7ed343862112419b1d80d0279869a20379efd642"
+	 secure: 7ed343862112419b1d80d0279869a20379efd642
 script: 
 - ant build 
 - sonar-scanner
