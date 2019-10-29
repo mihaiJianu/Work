@@ -6,7 +6,7 @@ addons:
   sonarcloud:
 	organization: mihaijianu
 	token:
-	 secure: 6d3fd005bf35e91c6eab18e05c6ee116654a9ed2
+	 secure: 3ec4181a1d1770efe6d28d2ec534d20c3716b28b
 script: 
 - ant build 
 - sonar-scanner
