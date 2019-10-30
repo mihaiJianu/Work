@@ -1,0 +1,12 @@
+language: java
+jdk:
+        - openjdk8
+addons:
+        sonarcloud:
+                organization: torkin1
+                token:
+                        secure: e3c0d31f31b8250d0da159881362d0ac59359a0b
+script:
+        - ant build
+        - sonar-scanner
+
