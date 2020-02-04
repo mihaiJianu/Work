@@ -3,9 +3,12 @@ jdk:
         - openjdk8
 addons:
         sonarcloud:
-                organization: "mihaijianu"
+                organization: torkin1
                 token:
-                        secure: "d0f69b411bd82f2a6b35e22cea9fa968096d312f"
+                        secure: e3c0d31f31b8250d0da159881362d0ac59359a0b
+before-install:
+        - sudo apt-get update -q
+        - sudo apt-get install openjfx -y
 script:
         - ant build
         - sonar-scanner
